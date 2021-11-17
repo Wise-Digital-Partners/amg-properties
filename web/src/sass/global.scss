@@ -1,0 +1,20 @@
+.tl-edges {
+  overflow-x: initial !important;
+}
+
+a,
+button {
+  @apply text-primary-500 hover:text-primary-900 underline outline-none transition-all duration-300 ease-linear;
+}
+
+.styled-list-checkmark {
+  @apply flex flex-col space-y-2.5;
+  li {
+    @apply flex;
+    &:before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Pro";
+      @apply font-normal text-primary-500 mr-3.5;
+    }
+  }
+}
