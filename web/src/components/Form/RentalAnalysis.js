@@ -69,27 +69,26 @@ export default class Form extends Component {
   render() {
     return (
       <StyledForm>
-        <div id="rental-analysis-form-ajax-response"></div>
         <form
           name="Rental Analysis"
           method="post"
           action=""
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          data-netlify-honeypot="bot-mb-5"
           onSubmit={this.handleSubmit}
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          {/* The `form-name` hidden mb-5 is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="Rental Analysis" />
           <div hidden>
             <label>
               Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
+              <input name="bot-mb-5" onChange={this.handleChange} />
             </label>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="name"
             >
               Name
@@ -103,9 +102,9 @@ export default class Form extends Component {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
-            <div className="mb-6">
+            <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="phone"
               >
                 Phone Number
@@ -117,9 +116,9 @@ export default class Form extends Component {
                 required={true}
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="email"
               >
                 Email Address
@@ -133,40 +132,69 @@ export default class Form extends Component {
             </div>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
-              htmlFor="what-can-we-help-you-with"
+              htmlFor="street-address"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
             >
-              What Can We Help You With?
+              Property Address
             </label>
-            <select
-              name="what-can-we-help-you-with"
-              onBlur={this.handleChange}
+            <input
+              type="text"
+              name="street-address"
+              onChange={this.handleChange}
               required={true}
-            >
-              <option value="">Select one...</option>
-              <option value="Plumbing">Plumbing</option>
-              <option value="Sewer & Drain">Sewer & Drain</option>
-              <option value="HVAC">HVAC</option>
-              <option value="Other">Other</option>
-            </select>
+              placeholder="Street Address"
+            />
           </div>
 
-          <div className="mb-6">
-            <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
-              htmlFor="message"
-            >
-              Message (optional)
-            </label>
-            <textarea
-              className="textarea"
-              name="message"
+          <div className="mb-5">
+            <input
+              type="text"
+              name="street-address-line-2"
               onChange={this.handleChange}
-              rows="4"
               required={false}
+              placeholder="Street Address Line 2"
             />
+          </div>
+
+          <div className="mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-6 w-full">
+              <input
+                type="text"
+                name="city"
+                onChange={this.handleChange}
+                required={true}
+                placeholder="City"
+              />
+              <input
+                type="text"
+                name="region"
+                onChange={this.handleChange}
+                required={true}
+                placeholder="Region"
+              />
+            </div>
+          </div>
+
+          <div className="mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-6 w-full">
+              <input
+                type="text"
+                name="zip-code"
+                onChange={this.handleChange}
+                required={true}
+                placeholder="Zip Code"
+                pattern="[0-9]*"
+              />
+              <input
+                type="text"
+                name="country"
+                onChange={this.handleChange}
+                required={true}
+                placeholder="Country"
+              />
+            </div>
           </div>
 
           <ButtonSolid type="submit" text="Send Message" />

@@ -58,14 +58,14 @@ const Modal = () => {
             role="dialog"
             aria-modal="true"
           >
-            <div className="group flex justify-between items-center pt-12 pb-4 md:py-4 px-5 border-b border-gray-200 min-h[48px]">
+            <div className="group flex justify-between items-center pt-12 pb-4 md:py-4 px-6 border-b border-gray-400/20">
               <div className="flex space-x-6 md:space-x-8">
                 <a
                   href="tel:619-940-4638"
-                  className="font-heading font-semibold text-primary-500"
+                  className="font-body font-medium text-primary-900 hover:text-primary-500 no-underline"
                 >
                   <i className="fas fa-phone-alt mr-1.5"></i>
-                  <span>619-940-4638</span>
+                  <span>(619) 940-4638</span>
                 </a>
               </div>
 
@@ -76,11 +76,9 @@ const Modal = () => {
             </div>
 
             <div className="pt-8 px-6 md:px-18 pb-24">
-              <div className="mb-7 text-center">
-                <p className="font-body text-mobile-4xl md:text-4xl text-gray-900 font-bold mb-3">
-                  Get a Free Rental Analysis
-                </p>
-              </div>
+              <header className="mb-8">
+                <p className="heading-three mb-3">Get a Free Rental Analysis</p>
+              </header>
 
               <RentalAnalysis />
             </div>

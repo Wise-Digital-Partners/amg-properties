@@ -85,9 +85,9 @@ export default class Form extends Component {
             </label>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="name"
             >
               Name
@@ -101,9 +101,9 @@ export default class Form extends Component {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
-            <div className="mb-6">
+            <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="phone"
               >
                 Phone Number
@@ -115,9 +115,9 @@ export default class Form extends Component {
                 required={true}
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="email"
               >
                 Email Address
@@ -133,7 +133,7 @@ export default class Form extends Component {
 
           <div className="mb-5">
             <fieldset>
-              <legend className="font-body text-sm font-medium text-primary-900 block mb-1">
+              <legend className="font-body text-sm font-medium text-primary-900 block mb-1.5">
                 Are you an owner or a renter?
               </legend>
               <div className="flex flex-col space-y-2 mt-2">
@@ -162,9 +162,9 @@ export default class Form extends Component {
             </fieldset>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="message"
             >
               Message (optional)

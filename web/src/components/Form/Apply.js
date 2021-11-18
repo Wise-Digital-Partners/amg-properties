@@ -87,7 +87,7 @@ export default class Form extends Component {
 
           <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="name"
             >
               Full Name
@@ -103,7 +103,7 @@ export default class Form extends Component {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
             <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="phone"
               >
                 Phone Number
@@ -117,7 +117,7 @@ export default class Form extends Component {
             </div>
             <div className="mb-5">
               <label
-                className="font-body text-sm font-medium text-primary-900 block mb-1"
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
                 htmlFor="email"
               >
                 Email Address
@@ -133,7 +133,7 @@ export default class Form extends Component {
 
           <div className="mb-5">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="message"
             >
               Message (optional)
@@ -149,7 +149,7 @@ export default class Form extends Component {
 
           <div className="mb-8">
             <label
-              className="font-body text-sm font-medium text-primary-900 block mb-1"
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
               htmlFor="resume"
             >
               Attach Your Resume
