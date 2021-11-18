@@ -12,7 +12,7 @@ const UtilityNav = () => {
             href="tel:619-940-4638"
             className="font-medium text-white text-sm hidden md:flex items-center no-underline"
           >
-            <i className="fas fa-phone-alt text-primary-500 text-lg mr-1.5"></i>
+            <i className="fas fa-phone-alt text-primary-500 hover:text-white text-lg mr-1.5"></i>
             <span>(619) 940-4638</span>
           </a>
           <div className="flex justify-around md:justify-end items-center space-x-8 w-full md:w-auto">

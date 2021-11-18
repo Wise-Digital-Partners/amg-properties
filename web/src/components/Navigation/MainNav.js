@@ -114,7 +114,7 @@ const MainNav = ({
             className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:ml-10"
           >
             <li
-              className="relative"
+              className="relative after:w-0 hover:after:w-full after:absolute after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:-bottom-1 after:bg-primary-500 after:h-1 after:transition-all after:duration-300 after:ease-linear"
               role="presentation"
               onMouseEnter={isHoveringSubMenu1}
               onMouseLeave={notHoveringSubMenu1}
@@ -124,8 +124,10 @@ const MainNav = ({
                 to="/property-management-landlords/"
                 className={`relative text-sm font-medium no-underline pb-8 ${
                   subMenuHovering1 && "text-primary-500"
-                } ${scrolled && "text-gray-700"} ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                } ${scrolled && "text-gray-700 hover:text-gray-700"} ${
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 Owners
@@ -161,7 +163,7 @@ const MainNav = ({
             </li>
 
             <li
-              className="relative"
+              className="relative after:w-0 hover:after:w-full after:absolute after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:-bottom-1 after:bg-primary-500 after:h-1 after:transition-all after:duration-300 after:ease-linear"
               role="presentation"
               onMouseEnter={isHoveringSubMenu2}
               onMouseLeave={notHoveringSubMenu2}
@@ -171,8 +173,10 @@ const MainNav = ({
                 to="/tenant-property-management/"
                 className={`relative text-sm font-medium no-underline pb-8 ${
                   subMenuHovering2 && "text-primary-500"
-                } ${scrolled && "text-gray-700"} ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                } ${scrolled && "text-gray-700 hover:text-gray-700"} ${
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 Residents
@@ -207,42 +211,48 @@ const MainNav = ({
               </ul>
             </li>
 
-            <li className="group">
+            <li className="relative after:w-0 hover:after:w-full after:absolute after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:-bottom-1 after:bg-primary-500 after:h-1 after:transition-all after:duration-300 after:ease-linear">
               <AniLink
                 fade
                 to="/vacancies/"
-                className={`relative text-sm font-medium no-underline pb-8 hover:text-primary-500 ${
-                  scrolled && "text-gray-700"
+                className={`relative text-sm font-medium no-underline pb-8 ${
+                  scrolled && "text-gray-700 hover:text-gray-700"
                 } ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 Vacancies
               </AniLink>
             </li>
 
-            <li className="group">
+            <li className="relative after:w-0 hover:after:w-full after:absolute after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:-bottom-1 after:bg-primary-500 after:h-1 after:transition-all after:duration-300 after:ease-linear">
               <AniLink
                 fade
                 to="/about-us/"
-                className={`relative text-sm font-medium no-underline pb-8 hover:text-primary-500 ${
-                  scrolled && "text-gray-700"
+                className={`relative text-sm font-medium no-underline pb-8 ${
+                  scrolled && "text-gray-700 hover:text-gray-700"
                 } ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 About Us
               </AniLink>
             </li>
 
-            <li className="group">
+            <li className="relative after:w-0 hover:after:w-full after:absolute after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:-bottom-1 after:bg-primary-500 after:h-1 after:transition-all after:duration-300 after:ease-linear">
               <AniLink
                 fade
                 to="/reviews/"
-                className={`relative text-sm font-medium no-underline pb-8 hover:text-primary-500 ${
-                  scrolled && "text-gray-700"
+                className={`relative text-sm font-medium no-underline pb-8 ${
+                  scrolled && "text-gray-700 hover:text-gray-700"
                 } ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 Reviews
@@ -414,8 +424,10 @@ const MainNav = ({
                 to="#"
                 className={`relative text-sm font-medium no-underline pb-8 ${
                   subMenuHovering3 && "text-primary-500"
-                } ${scrolled && "text-gray-700"} ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                } ${scrolled && "text-gray-700 hover:text-gray-700"} ${
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-700 hover:text-gray-700"
                 } ${headerDarkMode && "lg:!text-white"}`}
               >
                 Sign In <i className="far fa-chevron-down"></i>
