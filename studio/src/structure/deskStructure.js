@@ -4,7 +4,7 @@ import { MdPerson, MdDescription, MdCategory } from "react-icons/md";
 import IframePreview from "../previews/IframePreview";
 
 // Web preview configuration
-const remoteURL = "https://prodigy-plumbing.netlify.app";
+const remoteURL = "https://amg-properties-studio.netlify.app";
 const localURL = "http://localhost:8000";
 const previewURL =
   window.location.hostname === "localhost" ? localURL : remoteURL;
