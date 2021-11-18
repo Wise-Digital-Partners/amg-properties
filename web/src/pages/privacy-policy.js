@@ -10,12 +10,11 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://prodigyplumbers.com, and Prodigy
-            Plumbing Inc. and governs data collection and usage. For the
-            purposes of this Privacy Policy, unless otherwise noted, all
-            references to AMG Properties Inc. include
-            https://prodigyplumbers.com. The AMG Properties Inc. website is a
-            general informational site. By using the AMG Properties Inc.
+            of Privacy applies to https://amgprops.com/, and AMG Props and
+            governs data collection and usage. For the purposes of this Privacy
+            Policy, unless otherwise noted, all references to AMG Properties
+            Inc. include https://amgprops.com/. The AMG Properties Inc. website
+            is a general informational site. By using the AMG Properties Inc.
             website, you consent to the data practices described in this
             statement. 
           </p>
@@ -85,8 +84,7 @@ const Page = () => {
             include: your IP address, browser type, domain names, access times
             and referring website addresses. This information is used for the
             operation of the service, to maintain quality of the service, and to
-            provide general statistics regarding use of the Prodigy Plumbing
-            Inc. website. 
+            provide general statistics regarding use of the AMG Props website. 
           </p>
           <h3>Use of Cookies</h3>
           <p>
@@ -102,13 +100,13 @@ const Page = () => {
             feature to save you time. The purpose of a cookie is to tell the Web
             server that you have returned to a specific page. For example, if
             you personalize AMG Properties Inc. pages, or register with AMG
-            Properties Inc. site or services, a cookie helps Prodigy Plumbing
-            Inc. to recall your specific information on subsequent visits. This
-            simplifies the process of recording your personal information, such
-            as billing addresses, shipping addresses, and so on. When you return
-            to the same AMG Properties Inc. website, the information you
-            previously provided can be retrieved, so you can easily use the AMG
-            Properties Inc. features that you customized. 
+            Properties Inc. site or services, a cookie helps AMG Props to recall
+            your specific information on subsequent visits. This simplifies the
+            process of recording your personal information, such as billing
+            addresses, shipping addresses, and so on. When you return to the
+            same AMG Properties Inc. website, the information you previously
+            provided can be retrieved, so you can easily use the AMG Properties
+            Inc. features that you customized. 
           </p>
           <p>
             You have the ability to accept or decline cookies. Most Web browsers
@@ -253,12 +251,12 @@ const Page = () => {
           <p>
             <b>Phone Number:</b>
             <br />
-            (562) 413-1928
+            (619) 940-4638
           </p>
           <p>
             <b>Email Address:</b>
             <br />
-            info@prodigyplumbers.com
+            info@amgprops.com
           </p>
           <p>Effective as of November 10, 2021 </p>
         </div>

@@ -10,7 +10,7 @@ const UtilityNav = () => {
         <div className="flex justify-between items-center">
           <a
             href="tel:619-940-4638"
-            className="font-medium text-white text-sm hidden md:flex items-center"
+            className="font-medium text-white text-sm hidden md:flex items-center no-underline"
           >
             <i className="fas fa-phone-alt text-primary-500 text-lg mr-1.5"></i>
             <span>(619) 940-4638</span>
