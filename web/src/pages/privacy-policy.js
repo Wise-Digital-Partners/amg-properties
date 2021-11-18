@@ -12,17 +12,16 @@ const Page = () => {
             Protecting your private information is our priority. This Statement
             of Privacy applies to https://amgprops.com/, and AMG Props and
             governs data collection and usage. For the purposes of this Privacy
-            Policy, unless otherwise noted, all references to AMG Properties
-            Inc. include https://amgprops.com/. The AMG Properties Inc. website
-            is a general informational site. By using the AMG Properties Inc.
-            website, you consent to the data practices described in this
-            statement. 
+            Policy, unless otherwise noted, all references to AMG Props include
+            https://amgprops.com/. The AMG Props website is a general
+            informational site. By using the AMG Props website, you consent to
+            the data practices described in this statement. 
           </p>
           <h3>Collection of your Personal Information</h3>
           <p>
             In order to better provide you with products and services offered,
-            AMG Properties Inc. may collect personally identifiable information,
-            such as your: 
+            AMG Props may collect personally identifiable information, such as
+            your: 
           </p>
           <p>
             - First and Last Name 
@@ -47,74 +46,74 @@ const Page = () => {
           </p>
           <h3>Use of your Personal Information </h3>
           <p>
-            AMG Properties Inc. collects and uses your personal information to
-            operate and deliver the services you have requested. 
+            AMG Props collects and uses your personal information to operate and
+            deliver the services you have requested. 
           </p>
           <p>
-            AMG Properties Inc. may also use your personally identifiable
-            information to inform you of other products or services available
-            from AMG Properties Inc. and its affiliates. 
+            AMG Props may also use your personally identifiable information to
+            inform you of other products or services available from AMG Props
+            and its affiliates. 
           </p>
           <h3>Sharing Information with Third Parties</h3>
           <p>
-            AMG Properties Inc. does not sell, rent or lease its customer lists
-            to third parties. 
+            AMG Props does not sell, rent or lease its customer lists to third
+            parties. 
           </p>
           <p>
-            AMG Properties Inc. may share data with trusted partners to help
-            perform statistical analysis, send you email or postal mail, provide
+            AMG Props may share data with trusted partners to help perform
+            statistical analysis, send you email or postal mail, provide
             customer support, or arrange for deliveries. All such third parties
             are prohibited from using your personal information except to
-            provide these services to AMG Properties Inc., and they are required
-            to maintain the confidentiality of your information. 
+            provide these services to AMG Props and they are required to
+            maintain the confidentiality of your information. 
           </p>
           <p>
-            AMG Properties Inc. may disclose your personal information, without
-            notice, if required to do so by law or in the good faith belief that
-            such action is necessary to: (a) conform to the edicts of the law or
-            comply with legal process served on AMG Properties Inc. or the site;
-            (b) protect and defend the rights or property of AMG Properties Inc.
-            and/or (c) act under exigent circumstances to protect the personal
-            safety of users of AMG Properties Inc., or the public. 
+            AMG Props may disclose your personal information, without notice, if
+            required to do so by law or in the good faith belief that such
+            action is necessary to: (a) conform to the edicts of the law or
+            comply with legal process served on AMG Props or the site; (b)
+            protect and defend the rights or property of AMG Props and/or (c)
+            act under exigent circumstances to protect the personal safety of
+            users of AMG Props or the public. 
           </p>
           <h3>Automatically Collected Information</h3>
           <p>
             Information about your computer hardware and software may be
-            automatically collected by AMG Properties Inc. This information can
-            include: your IP address, browser type, domain names, access times
-            and referring website addresses. This information is used for the
+            automatically collected by AMG Props This information can include:
+            your IP address, browser type, domain names, access times and
+            referring website addresses. This information is used for the
             operation of the service, to maintain quality of the service, and to
-            provide general statistics regarding use of the AMG Props website. 
+            provide general statistics regarding use of the AMG AMG Props
+            website. 
           </p>
           <h3>Use of Cookies</h3>
           <p>
-            The AMG Properties Inc. website may use "cookies" to help you
-            personalize your online experience. A cookie is a text file that is
-            placed on your hard disk by a web page server. Cookies cannot be
-            used to run programs or deliver viruses to your computer. Cookies
-            are uniquely assigned to you, and can only be read by a web server
-            in the domain that issued the cookie to you. 
+            The AMG Props website may use "cookies" to help you personalize your
+            online experience. A cookie is a text file that is placed on your
+            hard disk by a web page server. Cookies cannot be used to run
+            programs or deliver viruses to your computer. Cookies are uniquely
+            assigned to you, and can only be read by a web server in the domain
+            that issued the cookie to you. 
           </p>
           <p>
             One of the primary purposes of cookies is to provide a convenience
             feature to save you time. The purpose of a cookie is to tell the Web
             server that you have returned to a specific page. For example, if
-            you personalize AMG Properties Inc. pages, or register with AMG
-            Properties Inc. site or services, a cookie helps AMG Props to recall
-            your specific information on subsequent visits. This simplifies the
-            process of recording your personal information, such as billing
-            addresses, shipping addresses, and so on. When you return to the
-            same AMG Properties Inc. website, the information you previously
-            provided can be retrieved, so you can easily use the AMG Properties
-            Inc. features that you customized. 
+            you personalize AMG Props pages, or register with AMG Props site or
+            services, a cookie helps AMG AMG Props to recall your specific
+            information on subsequent visits. This simplifies the process of
+            recording your personal information, such as billing addresses,
+            shipping addresses, and so on. When you return to the same Props
+            website, the information you previously provided can be retrieved,
+            so you can easily use the AMG Props features that you customized. 
           </p>
           <p>
             You have the ability to accept or decline cookies. Most Web browsers
             automatically accept cookies, but you can usually modify your
             browser setting to decline cookies if you prefer. If you choose to
             decline cookies, you may not be able to fully experience the
-            interactive features of the AMG Properties Inc. services or websites
-            you visit. 
+            interactive features of the AMG Props services or websites you
+            visit. 
           </p>
           <h3>Links</h3>
           <p>
@@ -210,43 +209,41 @@ const Page = () => {
           </ul>
           <h3>Children Under Thirteen</h3>
           <p>
-            AMG Properties Inc. does not knowingly collect personally
-            identifiable information from children under the age of thirteen. If
-            you are under the age of thirteen, you must ask your parent or
-            guardian for permission to use this website. 
+            AMG Props does not knowingly collect personally identifiable
+            information from children under the age of thirteen. If you are
+            under the age of thirteen, you must ask your parent or guardian for
+            permission to use this website. 
           </p>
           <h3>E-mail Communications</h3>
           <p>
-            From time to time, AMG Properties Inc. may contact you via email for
-            the purpose of providing announcements, promotional offers, alerts,
+            From time to time, AMG Props may contact you via email for the
+            purpose of providing announcements, promotional offers, alerts,
             confirmations, surveys, and/or other general communication. In order
             to improve our Services, we may receive a notification when you open
-            an email from AMG Properties Inc. or click on a link therein. 
+            an email from AMG Props or click on a link therein. 
           </p>
           <p>
             If you would like to stop receiving marketing or promotional
-            communications via email from AMG Properties Inc. and Supply Co.,
-            you may opt out of such communications by clicking on the
-            UNSUBSCRIBE button. 
+            communications via email from AMG Props and Supply Co., you may opt
+            out of such communications by clicking on the UNSUBSCRIBE button. 
           </p>
           <h3>Changes to this Statement</h3>
           <p>
-            AMG Properties Inc. reserves the right to change this Privacy Policy
-            from time to time. We will notify you about significant changes in
-            the way we treat personal information by sending a notice to the
-            primary email address specified in your account, by placing a
-            prominent notice on our website, and/or by updating any privacy
-            information. Your continued use of the website and/or Services
-            available after such modifications will constitute your: (a)
-            acknowledgment of the modified Privacy Policy; and (b) agreement to
-            abide and be bound by that Policy. 
+            AMG Props reserves the right to change this Privacy Policy from time
+            to time. We will notify you about significant changes in the way we
+            treat personal information by sending a notice to the primary email
+            address specified in your account, by placing a prominent notice on
+            our website, and/or by updating any privacy information. Your
+            continued use of the website and/or Services available after such
+            modifications will constitute your: (a) acknowledgment of the
+            modified Privacy Policy; and (b) agreement to abide and be bound by
+            that Policy. 
           </p>
           <h3>Contact Information</h3>
           <p>
-            AMG Properties Inc. welcomes your questions or comments regarding
-            this Statement of Privacy. If you believe that AMG Properties Inc.
-            has not adhered to this Statement, please contact AMG Properties
-            Inc. at: 
+            AMG Props welcomes your questions or comments regarding this
+            Statement of Privacy. If you believe that AMG Props has not adhered
+            to this Statement, please contact AMG Props at: 
           </p>
           <p>
             <b>Phone Number:</b>

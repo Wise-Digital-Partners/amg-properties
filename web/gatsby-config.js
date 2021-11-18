@@ -130,8 +130,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AMG Properties`,
-        short_name: `AMG Properties`,
+        name: `AMG Props`,
+        short_name: `AMG Props`,
         start_url: `/`,
         background_color: `#91BD14`,
         theme_color: `#91BD14`,

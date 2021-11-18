@@ -67,7 +67,7 @@ const Footer = ({ hideFooter }) => {
             <AniLink fade to="/">
               <GatsbyImage
                 image={data.logo.childImageSharp.gatsbyImageData}
-                alt="AMG Properties Logo"
+                alt="AMG Props Logo"
                 className="mb-6 mx-auto md:mx-0"
               />
             </AniLink>
@@ -247,7 +247,7 @@ const Footer = ({ hideFooter }) => {
           <div className="md:flex md:items-center">
             <ul className="flex items-center flex-wrap lg:space-x-4 justify-center md:justify-start">
               <li className="text-sm text-primary-900/70 order-2 md:order-1">
-                © {getYear()} AMG Properties
+                © {getYear()} AMG Props
               </li>
 
               <li className="text-sm order-3 md:order-2 flex items-center">

@@ -102,7 +102,7 @@ const MainNav = ({
           <AniLink fade to="/">
             <GatsbyImage
               image={data.logo.childImageSharp.gatsbyImageData}
-              alt="AMG Properties Logo"
+              alt="AMG Props Logo"
               className="w-[117px] md:w-[175px]"
             />
           </AniLink>
