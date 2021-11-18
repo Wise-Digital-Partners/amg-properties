@@ -33,9 +33,9 @@ const MainNav = ({
   const isHoveringSubMenu2 = () => setSubMenuHovering2(true);
   const notHoveringSubMenu2 = () => setSubMenuHovering2(false);
 
-  // const [subMenuHovering3, setSubMenuHovering3] = useState(false);
-  // const isHoveringSubMenu3 = () => setSubMenuHovering3(true);
-  // const notHoveringSubMenu3 = () => setSubMenuHovering3(false);
+  const [subMenuHovering3, setSubMenuHovering3] = useState(false);
+  const isHoveringSubMenu3 = () => setSubMenuHovering3(true);
+  const notHoveringSubMenu3 = () => setSubMenuHovering3(false);
 
   // handle click of navigation items
   const clickHandler = () => {
@@ -94,7 +94,7 @@ const MainNav = ({
       <div className="container flex justify-between items-center">
         <div className="flex flex-auto lg:hidden">
           <a href="tel:619-940-4638">
-            <i className="fas fa-phone text-lg text-gray-700"></i>
+            <i className="fas fa-phone-alt text-lg text-primary-900"></i>
           </a>
         </div>
 
@@ -108,7 +108,7 @@ const MainNav = ({
           </AniLink>
         </div>
 
-        <div className="flex items-center justify-center justify-end md:justify-start flex-auto">
+        <div className="flex items-center justify-end md:justify-start flex-auto">
           <ul
             id="navigation-desktop"
             className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:ml-10"
@@ -271,7 +271,7 @@ const MainNav = ({
                     <li>
                       <AccordionItem uuid={1}>
                         <AccordionItemButton className="flex items-center justify-center focus:outline-none">
-                          <p className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold mb-0 transition-colors duration-300 ease-linear">
+                          <p className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold no-underline mb-0 transition-colors duration-300 ease-linear">
                             Owners
                           </p>
                         </AccordionItemButton>
@@ -309,7 +309,7 @@ const MainNav = ({
                     <li>
                       <AccordionItem uuid={2}>
                         <AccordionItemButton className="flex items-center justify-center focus:outline-none">
-                          <p className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold mb-0 transition-colors duration-300 ease-linear">
+                          <p className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold no-underline mb-0 transition-colors duration-300 ease-linear">
                             Residents
                           </p>
                         </AccordionItemButton>
@@ -351,7 +351,7 @@ const MainNav = ({
                         to="/vacancies/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold"
+                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold no-underline"
                       >
                         Vacancies
                       </AniLink>
@@ -363,7 +363,7 @@ const MainNav = ({
                         to="/about-us/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold"
+                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold no-underline"
                       >
                         About
                       </AniLink>
@@ -375,7 +375,7 @@ const MainNav = ({
                         to="/reviews/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold"
+                        className="font-heading text-xl text-primary-900 hover:text-primary-500 font-semibold no-underline"
                       >
                         Reviews
                       </AniLink>
@@ -401,14 +401,62 @@ const MainNav = ({
           </div>
         </div>
 
-        <div className="flex items-center justify-center justify-end">
-          <div className="hidden lg:inline-flex lg:items-center lg:space-x-6">
-            <ButtonSolid
-              modal="modal-contact"
-              text="Contact"
-              className="min-w-0"
-            />
-          </div>
+        <div className="hidden md:flex items-center justify-end space-x-6">
+          <ul className="flex lg:flex-row lg:space-x-8">
+            <li
+              className="relative"
+              role="presentation"
+              onMouseEnter={isHoveringSubMenu3}
+              onMouseLeave={notHoveringSubMenu3}
+            >
+              <AniLink
+                fade
+                to="#"
+                className={`relative text-sm font-medium no-underline pb-8 ${
+                  subMenuHovering3 && "text-primary-500"
+                } ${scrolled && "text-gray-700"} ${
+                  headerLinkColor === "white" ? "text-white" : "text-gray-700"
+                } ${headerDarkMode && "lg:!text-white"}`}
+              >
+                Sign In <i className="far fa-chevron-down"></i>
+              </AniLink>
+
+              <ul
+                className={`absolute top-0 bg-primary-900 shadow-3xl flex flex-col space-y-4 w-auto px-4 py-6 z-10 transition-all duration-300 ease-linear ${
+                  subMenuHovering3
+                    ? " visible translate-y-12 opacity-100"
+                    : "invisible translate-y-20 opacity-0"
+                }`}
+              >
+                <li className="whitespace-nowrap">
+                  <a
+                    href="https://amgpropertymgmt.appfolio.com/oportal/users/log_in"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="relative block font-body font-medium text-white hover:text-primary-500 no-underline"
+                  >
+                    Owner Portal
+                  </a>
+                </li>
+                <li className="whitespace-nowrap">
+                  <a
+                    href="https://amgpropertymgmt.appfolio.com/connect/users/sign_in"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="relative block font-body font-medium text-white hover:text-primary-500 no-underline"
+                  >
+                    Tenant Portal
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ButtonSolid
+            modal="modal-contact"
+            text="Contact"
+            className="min-w-0"
+          />
         </div>
       </div>
     </nav>

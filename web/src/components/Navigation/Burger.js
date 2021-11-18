@@ -34,20 +34,20 @@ const Burger = ({ offcanvasOpen, setOffcanvasOpen, headerStyle, scrolled }) => {
     >
       <div
         className={`line relative w-6 h-[2px] z-10 transition-all duration-300 ease-linear ${
-          headerStyle === "overlap" ? "bg-gray-800" : "bg-gray-800"
-        } ${scrolled && "bg-primary-600"} ${offcanvasOpen && "bg-primary-600"}`}
+          headerStyle === "overlap" ? "bg-primary-900" : "bg-primary-900"
+        } ${scrolled && "bg-primary-900"} ${offcanvasOpen && "bg-primary-900"}`}
       />
       <div
         className={`line relative w-6 h-[2px] z-10 transition-all duration-300 ease-linear ${
-          headerStyle === "overlap" ? "bg-gray-800" : "bg-gray-800"
-        } ${scrolled && "bg-primary-600"} ${
-          offcanvasOpen && "bg-primary-600"
+          headerStyle === "overlap" ? "bg-primary-900" : "bg-primary-900"
+        } ${scrolled && "bg-primary-900"} ${
+          offcanvasOpen && "bg-primary-900"
         } ${offcanvasOpen && "opacity-0"}`}
       />
       <div
         className={`line relative w-6 h-[2px] z-10 transition-all duration-300 ease-linear ${
-          headerStyle === "overlap" ? "bg-gray-800" : "bg-gray-800"
-        } ${scrolled && "bg-primary-600"} ${offcanvasOpen && "bg-primary-600"}`}
+          headerStyle === "overlap" ? "bg-primary-900" : "bg-primary-900"
+        } ${scrolled && "bg-primary-900"} ${offcanvasOpen && "bg-primary-900"}`}
       />
     </StyledBurger>
   );
