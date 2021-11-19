@@ -114,7 +114,7 @@ const Footer = ({ hideFooter }) => {
                   <li>
                     <AniLink
                       fade
-                      to="/property-management-landlords/"
+                      to="/property-management-investors/"
                       className="text-sm text-primary-900/70 hover:text-primary-900 no-underline relative before:w-0 hover:before:w-full before:absolute before:left-auto hover:before:left-0 before:right-0 hover:before:right-auto before:bottom-0 before:bg-primary-900 before:h-px before:transition-all before:duration-300 before:ease-linear"
                     >
                       Owners
@@ -223,10 +223,10 @@ const Footer = ({ hideFooter }) => {
                 <ul className="flex flex-col space-y-1.5">
                   <li>
                     <a
-                      href="tel:952-944-9000"
+                      href="tel:619-940-4638"
                       className="text-sm text-primary-900/70 hover:text-primary-900 no-underline relative before:w-0 hover:before:w-full before:absolute before:left-auto hover:before:left-0 before:right-0 hover:before:right-auto before:bottom-0 before:bg-primary-900 before:h-px before:transition-all before:duration-300 before:ease-linear"
                     >
-                      (952) 944-9000
+                      (619) 940-4638
                     </a>
                   </li>
                   <li>

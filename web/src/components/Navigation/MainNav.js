@@ -81,8 +81,8 @@ const MainNav = ({
     <nav
       id="main-navigation"
       className={`py-2 w-full transition duration-300 ease-linear ${
-        headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-white"
-      } ${headerHasBorder && ""} ${offcanvasOpen ? "" : ""} ${
+        headerStyle === "overlap" ? "lg:bg-transparent" : ""
+      } ${headerHasBorder && ""} ${offcanvasOpen && "bg-white z-10 relative"} ${
         headerDarkMode && ""
       } ${
         scrolled && "!fixed !bg-white top-0 left-0 w-full !shadow-3xl z-50"
@@ -91,7 +91,7 @@ const MainNav = ({
       aria-label="main-navigation"
       offcanvas-open={offcanvasOpen}
     >
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between items-center relative z-10">
         <div className="flex flex-auto lg:hidden">
           <a href="tel:619-940-4638">
             <i className="fas fa-phone-alt text-lg text-primary-900"></i>
@@ -103,12 +103,12 @@ const MainNav = ({
             <GatsbyImage
               image={data.logo.childImageSharp.gatsbyImageData}
               alt="AMG Props Logo"
-              className="w-[117px] md:w-[175px]"
+              className="w-[117px] lg:w-[175px]"
             />
           </AniLink>
         </div>
 
-        <div className="flex items-center justify-end md:justify-start flex-auto">
+        <div className="flex items-center justify-end lg:justify-start flex-auto">
           <ul
             id="navigation-desktop"
             className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:ml-10"
@@ -121,7 +121,7 @@ const MainNav = ({
             >
               <AniLink
                 fade
-                to="/property-management-landlords/"
+                to="/property-management-investors/"
                 className={`relative text-sm font-medium no-underline pb-8 ${
                   subMenuHovering1 && "text-primary-500"
                 } ${scrolled && "text-gray-700 hover:text-gray-700"} ${
@@ -205,7 +205,7 @@ const MainNav = ({
                     rel="noreferrer"
                     className="relative block font-body font-medium text-white hover:text-primary-500 no-underline"
                   >
-                    Maintenance Request
+                    Request Maintenance
                   </a>
                 </li>
               </ul>
@@ -291,10 +291,21 @@ const MainNav = ({
                             <li className="whitespace-nowrap">
                               <AniLink
                                 fade
+                                to="/property-management-investors/"
+                                onKeyDown={clickHandler}
+                                onClick={clickHandler}
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
+                              >
+                                Owners
+                              </AniLink>
+                            </li>
+                            <li className="whitespace-nowrap">
+                              <AniLink
+                                fade
                                 to="/resources/"
                                 onKeyDown={clickHandler}
                                 onClick={clickHandler}
-                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500"
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
                               >
                                 Resources
                               </AniLink>
@@ -306,7 +317,7 @@ const MainNav = ({
                                 rel="noreferrer"
                                 onKeyDown={clickHandler}
                                 onClick={clickHandler}
-                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500"
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
                               >
                                 Owner Portal
                               </a>
@@ -327,13 +338,24 @@ const MainNav = ({
                         <AccordionItemPanel className="pt-4">
                           <ul className="flex flex-col space-y-4">
                             <li className="whitespace-nowrap">
+                              <AniLink
+                                fade
+                                to="/tenant-property-management/"
+                                onKeyDown={clickHandler}
+                                onClick={clickHandler}
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
+                              >
+                                Residents
+                              </AniLink>
+                            </li>
+                            <li className="whitespace-nowrap">
                               <a
                                 href="https://amgpropertymgmt.appfolio.com/connect/users/sign_in"
                                 target="_blank"
                                 rel="noreferrer"
                                 onKeyDown={clickHandler}
                                 onClick={clickHandler}
-                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500"
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
                               >
                                 Pay Your Rent
                               </a>
@@ -345,9 +367,9 @@ const MainNav = ({
                                 rel="noreferrer"
                                 onKeyDown={clickHandler}
                                 onClick={clickHandler}
-                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500"
+                                className="relative block font-body font-medium text-gray-600 hover:text-primary-500 no-underline"
                               >
-                                Maintenance Request
+                                Request Maintenance
                               </a>
                             </li>
                           </ul>
@@ -393,7 +415,7 @@ const MainNav = ({
                   </Accordion>
                 </ul>
 
-                <div className="grid gap-y-4">
+                <div className="grid gap-y-4 max-w-sm mx-auto">
                   <ButtonGhost
                     href="tel:619-940-4638"
                     text="(619) 940-4638"
@@ -411,7 +433,7 @@ const MainNav = ({
           </div>
         </div>
 
-        <div className="hidden md:flex items-center justify-end space-x-6">
+        <div className="hidden lg:flex items-center justify-end space-x-6">
           <ul className="flex lg:flex-row lg:space-x-8">
             <li
               className="relative"

@@ -102,10 +102,7 @@ const Header = ({
   }, [scrolled, headerStyle]);
 
   return (
-    <div
-      id="site-navigation"
-      className={`relative z-30 ${hideHeader && "!hidden"}`}
-    >
+    <div id="site-navigation" className={`relative ${hideHeader && "!hidden"}`}>
       {/* <PromoBar /> */}
       <UtilityNav />
       <MainNav

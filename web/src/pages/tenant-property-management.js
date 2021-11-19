@@ -12,7 +12,6 @@ import {
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
-import ValueProps from "../components/Repeating/ValueProps";
 import ApplicationProcess from "../components/Repeating/ApplicationProcess";
 import LogoCloud from "../components/Repeating/LogoCloud";
 import CallToAction from "../components/Repeating/CTA";
@@ -164,8 +163,8 @@ const Page = ({ data }) => {
         // openGraphImage={data.openGraphImage.publicURL}
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
-      <section className="relative mb-20 md:mb-14 pt-4 md:pt-6 md:min-h-[565px] lg:min-h-[640px]">
-        <div className="bg-primary-900/10 absolute right-0 top-0 md:top-[-64px] h-[277px] md:h-[629px] lg:h-[704px] max-w-[1000px] w-full md:w-[37vw] z-30"></div>
+      <section className="relative mb-20 md:mb-30 pt-4 md:pt-6 md:min-h-[565px] lg:min-h-[640px]">
+        <div className="bg-primary-900/10 absolute right-0 top-0 md:top-[-64px] h-[277px] md:h-[629px] lg:h-[704px] max-w-[1000px] w-full md:w-[37vw] "></div>
         <div className="container">
           <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-10 lg:gap-x-20 items-center">
             <div className="order-2 md:order-1">
@@ -178,92 +177,13 @@ const Page = ({ data }) => {
               </p>
               <ButtonSolid modal="modal-rental-analysis" text="Let's Connect" />
             </div>
-            <div className="order-1 md:order-2 mx-auto z-40">
+            <div className="order-1 md:order-2 mx-auto">
               <GatsbyImage
                 image={data.hero.childImageSharp.gatsbyImageData}
                 className="rounded-lg md:rounded-2xl"
               />
             </div>
           </div>
-        </div>
-      </section>
-
-      <ValueProps />
-
-      <section className="mb-20 md:mb-24">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-y-8 md:gap-x-10 lg:gap-x-20 items-center">
-            <div>
-              <GatsbyImage
-                image={data.vacancies.childImageSharp.gatsbyImageData}
-              />
-            </div>
-            <div>
-              <h2>What's Available For Rent</h2>
-              <p>
-                We're here to help you find your next home. Take a look at
-                available apartments, condos, single-family homes, and more that
-                you can rent here in the San Diego area.
-              </p>
-              <ButtonWithIcon href="/vacancies/" text="Explore Properties" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <ApplicationProcess />
-      <Testimonials />
-
-      <section className="mb-20 md:mb-32">
-        <div className="container">
-          <header className="mb-8 md:mb-10">
-            <h2>Resident FAQs</h2>
-          </header>
-
-          <Accordion
-            allowZeroExpanded={true}
-            className="border-t border-solid border-primary-600/20"
-          >
-            {faqs.map((faq, i) => {
-              return (
-                <div key={i}>
-                  <AccordionItem
-                    className="border-b border-solid border-gray-700/20 pt-6 md:pt-7 pb-5 md:pb-6"
-                    uuid={i}
-                  >
-                    <AccordionItemButton className="flex items-center justify-between focus:outline-none">
-                      <p className="heading-six mb-0">{faq.question}</p>
-                      <AccordionItemState>
-                        {(state) => {
-                          const icon = state.expanded
-                            ? "rotate-180"
-                            : "rotate-0";
-                          return (
-                            <svg
-                              width="28"
-                              height="12"
-                              viewBox="0 0 28 12"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              className={`transform ${icon} text-lg text-primary-400/50 ml-4`}
-                            >
-                              <path
-                                d="M14 12L27.8564 0L0.143594 0L14 12Z"
-                                fill="#91BD14"
-                              />
-                            </svg>
-                          );
-                        }}
-                      </AccordionItemState>
-                    </AccordionItemButton>
-                    <AccordionItemPanel className="pt-6 pr-10 max-w-[880px] animate-fadeIn">
-                      <p className="mb-0">{faq.answer}</p>
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                </div>
-              );
-            })}
-          </Accordion>
         </div>
       </section>
 
@@ -363,6 +283,83 @@ const Page = ({ data }) => {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mb-20 md:mb-24">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-y-8 md:gap-x-10 lg:gap-x-20 items-center">
+            <div>
+              <GatsbyImage
+                image={data.vacancies.childImageSharp.gatsbyImageData}
+              />
+            </div>
+            <div>
+              <h2>What's Available For Rent</h2>
+              <p>
+                We're here to help you find your next home. Take a look at
+                available apartments, condos, single-family homes, and more that
+                you can rent here in the San Diego area.
+              </p>
+              <ButtonWithIcon href="/vacancies/" text="Explore Properties" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ApplicationProcess />
+      <Testimonials />
+
+      <section className="mb-20 md:mb-32">
+        <div className="container">
+          <header className="mb-8 md:mb-10">
+            <h2>Resident FAQs</h2>
+          </header>
+
+          <Accordion
+            allowZeroExpanded={true}
+            className="border-t border-solid border-primary-600/20"
+          >
+            {faqs.map((faq, i) => {
+              return (
+                <div key={i}>
+                  <AccordionItem
+                    className="border-b border-solid border-gray-700/20 pt-6 md:pt-7 pb-5 md:pb-6"
+                    uuid={i}
+                  >
+                    <AccordionItemButton className="flex items-center justify-between focus:outline-none">
+                      <p className="heading-six mb-0">{faq.question}</p>
+                      <AccordionItemState>
+                        {(state) => {
+                          const icon = state.expanded
+                            ? "rotate-180"
+                            : "rotate-0";
+                          return (
+                            <svg
+                              width="28"
+                              height="12"
+                              viewBox="0 0 28 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className={`transform ${icon} text-lg text-primary-400/50 ml-4`}
+                            >
+                              <path
+                                d="M14 12L27.8564 0L0.143594 0L14 12Z"
+                                fill="#91BD14"
+                              />
+                            </svg>
+                          );
+                        }}
+                      </AccordionItemState>
+                    </AccordionItemButton>
+                    <AccordionItemPanel className="pt-6 pr-10 max-w-[880px] animate-fadeIn">
+                      <p className="mb-0">{faq.answer}</p>
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                </div>
+              );
+            })}
+          </Accordion>
         </div>
       </section>
 

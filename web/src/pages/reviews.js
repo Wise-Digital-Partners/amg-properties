@@ -32,11 +32,11 @@ const Page = ({ data }) => {
         textMaxWidth="md:max-w-[640px]"
         padding="py-16 md:py-36"
       >
-        <h1 className="text-white">Reviews Heading Goes Here</h1>
+        <h1 className="text-white">Why We Do What We Do</h1>
         <p className="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-          purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor
+          We love helping people find a great place to live, and partnering with
+          owners to take good care of their investment. Share your experience
+          with AMG Props so we can hear how we're doing!
         </p>
 
         <ButtonSolid href="/review-us/" text="Leave a Review" />

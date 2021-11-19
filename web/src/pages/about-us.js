@@ -131,7 +131,7 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <section className="relative mb-20 md:mb-30 pt-4 md:pt-6 md:min-h-[565px] lg:min-h-[640px]">
-        <div className="bg-primary-900/10 absolute right-0 top-0 md:top-[-64px] h-[277px] md:h-[629px] lg:h-[704px] max-w-[1000px] w-full md:w-[37vw] z-30"></div>
+        <div className="bg-primary-900/10 absolute right-0 top-0 md:top-[-64px] h-[277px] md:h-[629px] lg:h-[704px] max-w-[1000px] w-full md:w-[37vw] "></div>
         <div className="container">
           <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-10 lg:gap-x-20 items-center">
             <div className="order-2 md:order-1">
@@ -146,7 +146,7 @@ const Page = ({ data }) => {
               </p>
               <ButtonSolid modal="modal-contact" text="Reach Us" />
             </div>
-            <div className="order-1 md:order-2 mx-auto z-40">
+            <div className="order-1 md:order-2 mx-auto">
               <GatsbyImage
                 image={data.hero.childImageSharp.gatsbyImageData}
                 className="rounded-lg md:rounded-2xl"

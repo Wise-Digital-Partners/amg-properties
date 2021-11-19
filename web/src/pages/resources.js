@@ -73,7 +73,7 @@ const ArchivePage = (props) => {
       <section className="pt-10 md:pt-16 mb-20 md:mb-30">
         <div className="container">
           <header className="mb-10 md:mb-20">
-            <h1>Blog Heading Goes Here</h1>
+            <h1>Tips From The Experts</h1>
           </header>
           {postNodes && postNodes.length > 0 && (
             <BlogPostPreview nodes={postNodes} />
