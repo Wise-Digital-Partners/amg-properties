@@ -43,8 +43,8 @@ const Page = ({ data }) => {
           <span className="text-primary-500">.</span>
         </p>
         <p className="text-white text-xl mb-8">
-          Stress less. Increase your revenue. Your property and residents are in
-          good hands.
+          Stress less. Increase your revenue. Your Hillcrest property and
+          residents are in good hands.
         </p>
         <ButtonSolid
           modal="modal-rental-analysis"

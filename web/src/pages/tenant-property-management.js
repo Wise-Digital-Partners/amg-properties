@@ -168,12 +168,12 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-10 lg:gap-x-20 items-center">
             <div className="order-2 md:order-1">
-              <h1>Professional Resident Property Management</h1>
+              <h1>Residential Property Management</h1>
               <p>
                 Whether it's a single-family home in the suburbs or a condo near
                 the beach, we have rentals to fit both your lifestyle and
                 budget. And once you're an AMG Props resident, we'll take great
-                care of you!.
+                care of you!
               </p>
               <ButtonSolid modal="modal-rental-analysis" text="Let's Connect" />
             </div>
