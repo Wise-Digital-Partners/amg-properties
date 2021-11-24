@@ -6,14 +6,14 @@ import SearchEngineOptimization from "../components/SEO";
 import ApplicationProcess from "../components/Repeating/ApplicationProcess";
 import CallToAction from "../components/Repeating/CTA";
 
-const Page = () => {
+const Page = ({ data }) => {
   return (
     <Layout>
       <SearchEngineOptimization
         title="Vacancies | San Diego Property Management Company | AMG"
         description="What's for rent? Search our list of vacancies in the greater San Diego area—everything from apartments to condos to single-family homes."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <section className="mb-20 md:mb-24 pt-12 md:pt-16">
         <div className="container">
@@ -45,12 +45,12 @@ const Page = () => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/FB-Vacancies.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Twitter-Vacancies.jpg" }
     ) {
       publicURL
     }

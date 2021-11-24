@@ -15,12 +15,12 @@ import CallToAction from "../components/Repeating/CTA";
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Global.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Global.jpg" }
     ) {
       publicURL
     }
@@ -74,8 +74,8 @@ const ArchivePage = (props) => {
       <SearchEngineOptimization
         title="Resources | San Diego Property Management Company | AMG"
         description="Get great tips that'll help you get the most from your investment—straight from the property management experts at AMG Props. "
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="pt-10 md:pt-16 mb-20 md:mb-30">

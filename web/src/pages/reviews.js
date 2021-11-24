@@ -22,8 +22,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="AMG Props Reviews | San Diego Property Management Company"
         description="See why rental property investors and residents love AMG Props, San Diego's premier full-service property management company."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -56,12 +56,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Reviews.jpg" }
+      relativePath: { eq: "open-graph/facebook/FB-Reviews.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Reviews.jpg" }
+      relativePath: { eq: "open-graph/twitter/Twitter-Reviews.jpg" }
     ) {
       publicURL
     }

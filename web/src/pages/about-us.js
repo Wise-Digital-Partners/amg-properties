@@ -25,57 +25,75 @@ const Page = ({ data }) => {
         bio: (
           <>
             <p>
-              Amanda Gresiak is our company’s leader. She has been in the
-              property management industry in some capacity since 2004 and
-              continues to learn more and more each day. If she could be
-              anywhere other than work right now, she would be with her husband
-              & kids on an adventure. When Amanda was a child, she dreamt of
-              being a pediatrician. On any given Sunday morning, you can find
-              Amanda practicing yoga and at church. Amanda wants to be
-              remembered as loving, adventurous, full of gratitude & driven. The
-              qualities that Amanda brings to work is her determination & her
-              vision for the company. Three words that would describe Amanda are
-              headstrong, determined & fun loving. The rest of the office may
-              say that Amanda is chatty, a whirlwind & a mom. One goal that
-              Amanda has for this coming year is to purchase some real estate to
-              add to her portfolio. A few of Amanda’s daily routines are working
-              out, prayer & journaling & bedtime snuggles with her two
-              daughters. Some publications that Amanda reads are San Diego
-              Magazine and various self-development books. Amanda is happiest
-              when she is out in nature exploring our beautiful
-              town/city/country/world. The person that Amanda most admires is
-              Jesus, because well… Three of Amanda’s top pet peeves would be bad
-              merging onto the freeway in front of her, people not being
-              resourceful, and her children waking up early when she’s trying to
-              have her “me time”! A typical day for Amanda starts at 4:30am with
-              exercising & meditation, bringing her kids to school, heading to
-              work, some sort of family event or dinner, and then bed. Amanda’s
-              main “talent” is walking in place at her desk at work to get steps
-              on her Fitbit. A few causes that Amanda supports are homelessness,
-              childhood hunger, breast cancer research, & cystic fibrosis
-              research. Amanda loves entertaining friends at her home and
-              meeting at the beach for walks. Amanda’s motto would be “surround
-              yourself with people who are smarter than you”.
+              Amanda Gresiak is a remarkable individual, a professional real
+              estate broker, and the Founder and owner of AMG Props, a property
+              management company dedicated to linking clients to their real
+              estate goals. Her achievements in the real estate industry have
+              made her a pacesetter with amazing contributions. Amanda attended
+              San Diego State University and also earned a Liberal Arts &
+              Sciences Associate of Arts Degree from Arizona State University.
+              Her education, coupled with her acquired knowledge and skills
+              built by 17 years of experience, has enabled her to build a
+              successful brand and career.
             </p>
-          </>
-        ),
-      },
-      {
-        image: data.fpo.childImageSharp.gatsbyImageData,
-        name: "Brad Darlington",
-        brokerNumber: "",
-        phone: "",
-        email: "",
-        bio: (
-          <>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Amanda’s journey started in 2004 as a receptionist, working in
+              Boulder City, Colorado. She then made a successful transition to
+              property management. She also has two years of working experience
+              in private investment across San Diego and one year in sales under
+              a local property management company. Serving across these
+              positions, Amanda learned leadership, teamwork, and organization
+              skills unique to the business world. She brought them to bear when
+              she finally started her own company in 2010.
+            </p>
+
+            <p>
+              Amanda’s AMG Props has since grown organically to become one of
+              the best full-service property management companies across the San
+              Diego metropolitan area and its surroundings through referrals of
+              existing clients and surrounding realtors. Her strong sales and
+              negotiating skills make her a keen advocate for her clients and
+              the company. She proactively seeks new ways to enhance her
+              services and continually attain excellence, with client
+              satisfaction the ultimate objective.
+            </p>
+
+            <p>
+              Amanda has made a name for herself as a hardworking and energetic
+              industry professional with an indispensable passion for her craft.
+              She is friendly and easy to get along with, enabling her to build
+              and maintain excellent working relationships. Amanda uses
+              effective and efficient communication skills, attention to detail,
+              time management, and organization throughout her services. She
+              always keeps her clients informed throughout the process and
+              strives to get them the best bottom line. Motivated by the desire
+              to become a global expert in her field, Amanda has educated
+              herself in all things property management by being an active
+              member of NARPM, SDAR, and IREM.
+            </p>
+
+            <p>
+              As a broker, Amanda oversees the company's operations, developing
+              ideas and growing the company’s systems and operations to be more
+              efficient so that clients can get more value. Her experience has
+              led her and the company to the success they enjoy today. To get
+              there, Amanda spent time and resources dialing in the company’s
+              systems and procedures in the office and creating a culture of
+              empathy and empowerment for investors, tenants, and staff alike.
+              With deep industry knowledge, coupled with an analytical and
+              detail-oriented approach, Amanda is equipped to understand the
+              most discerning clients' needs, delivering an experience rooted in
+              customer service, integrity, and expertise.
+            </p>
+
+            <p>
+              Amanda loves spending time with her friends and family outside
+              work or engaging in self-developing activities like hiking,
+              adventuring, running, and fitness. In addition, she is involved in
+              church leadership. She takes pleasure in participating in
+              philanthropic activities like serving the homeless through a local
+              outreach called We See You San Diego, San Diego Rescue Mission.
             </p>
           </>
         ),
@@ -127,8 +145,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="About AMG Props | San Diego Property Management Company"
         description="AMG Props is a trusted, full-service property management company that's managed over 500 properties in communities throughout the greater San Diego area."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <section className="relative mb-20 md:mb-30 pt-4 md:pt-6 md:min-h-[565px] lg:min-h-[640px]">
         <div className="bg-primary-900/10 absolute right-0 top-0 md:top-[-64px] h-[277px] md:h-[629px] lg:h-[704px] max-w-[1000px] w-full md:w-[37vw] "></div>
@@ -227,12 +245,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/FB-About.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Twitter-About.jpg" }
     ) {
       publicURL
     }
