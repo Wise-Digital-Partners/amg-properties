@@ -88,7 +88,7 @@ export default class Form extends Component {
       <StyledForm>
         <div id="contact-form-ajax-response"></div>
         <form
-          name="Contact"
+          name="Contact - Landlord or Investors"
           method="post"
           action=""
           data-netlify="true"
@@ -97,7 +97,11 @@ export default class Form extends Component {
           id="conditional-form"
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="Contact" />
+          <input
+            type="hidden"
+            name="form-name"
+            value="Contact - Landlord or Investors"
+          />
           <div hidden>
             <label>
               Don’t fill this out:{" "}
@@ -199,6 +203,99 @@ export default class Form extends Component {
           </div>
 
           <ButtonSolid type="submit" text="Send" />
+        </form>
+
+        <form
+          name="Contact - Residents"
+          method="post"
+          action=""
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
+          className="hidden"
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="Contact - Residents" />
+          <div hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </div>
+          {/* <div className="mb-5"> */}
+          {/* <label
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
+              htmlFor="name"
+            >
+              Name
+            </label> */}
+          <input type="text" name="name" />
+          {/* </div> */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
+            <div className="mb-5">
+              <label
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
+                htmlFor="phone"
+              >
+                Phone Number
+              </label> */}
+          <input type="tel" name="phone" />
+          {/* </div> */}
+          {/* <div className="mb-5">
+              <label
+                className="font-body text-sm font-medium text-primary-900 block mb-1.5"
+                htmlFor="email"
+              >
+                Email Address
+              </label> */}
+          <input type="email" name="email" />
+          {/* </div>
+          </div> */}
+          {/* <div className="mb-5">
+            <fieldset>
+              <legend className="font-body text-sm font-medium text-primary-900 block mb-1.5">
+                Are you an owner or a renter?
+              </legend>
+              <div className="flex flex-col space-y-2 mt-2">
+                <label className="relative pl-7 mb-2 cursor-pointer text-sm"> */}
+          <input
+            type="radio"
+            name="are-you-an-owner-or-a-renter"
+            // value="Landlord or Investors"
+            // onChange={this.changeFormName}
+            // required={true}
+          />
+          {/* Landlord or Investors */}
+          {/* <span className="radio-custom"></span> */}
+          {/* </label> */}
+          {/* <label className="relative pl-7 mb-2 cursor-pointer text-sm"> */}
+          <input
+            type="radio"
+            name="are-you-an-owner-or-a-renter"
+            // onChange={this.changeFormName}
+            // value="Residents"
+          />
+          {/* Residents
+            <span className="radio-custom"></span>
+          </label> */}
+          {/* </div>
+            </fieldset>
+          </div> */}
+          {/* <div className="mb-5">
+            <label
+              className="font-body text-sm font-medium text-primary-900 block mb-1.5"
+              htmlFor="message"
+            >
+              Message (optional)
+            </label> */}
+          <textarea
+            className="textarea"
+            name="message"
+            // onChange={this.handleChange}
+            rows="4"
+            // required={false}
+          />
+          {/* </div> */}
         </form>
       </StyledForm>
     );
