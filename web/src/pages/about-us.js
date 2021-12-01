@@ -104,19 +104,7 @@ const Page = ({ data }) => {
         brokerNumber: "",
         phone: "",
         email: "",
-        bio: (
-          <>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </>
-        ),
+        bio: "",
       },
       {
         image: data.kevin.childImageSharp.gatsbyImageData,
@@ -124,19 +112,7 @@ const Page = ({ data }) => {
         brokerNumber: "",
         phone: "",
         email: "",
-        bio: (
-          <>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </>
-        ),
+        bio: "",
       },
     ],
   };
@@ -213,22 +189,37 @@ const Page = ({ data }) => {
           <div className="grid md:grid-cols-4 gap-y-12 gap-x-6">
             {content.team.map((content, i) => {
               return (
-                <button
-                  aria-label="Modal trigger"
-                  data-modal-open="modal-team-members"
-                  onClick={() => setSlideIndex(i)}
-                  key={i}
-                  className="group relative text-left no-underline"
-                >
-                  <div className="overflow-hidden mb-4">
-                    <GatsbyImage
-                      image={content.image}
-                      alt={content.heading}
-                      className="mx-auto w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
-                    />
-                  </div>
-                  <p className="heading-six mb-0">{content.name}</p>
-                </button>
+                <>
+                  {content.bio ? (
+                    <button
+                      aria-label="Modal trigger"
+                      data-modal-open="modal-team-members"
+                      onClick={() => setSlideIndex(i)}
+                      key={i}
+                      className="group relative text-left no-underline"
+                    >
+                      <div className="overflow-hidden mb-4">
+                        <GatsbyImage
+                          image={content.image}
+                          alt={content.heading}
+                          className="mx-auto w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                        />
+                      </div>
+                      <p className="heading-six mb-0">{content.name}</p>
+                    </button>
+                  ) : (
+                    <div key={i} className="text-left no-underline">
+                      <div className="mb-4">
+                        <GatsbyImage
+                          image={content.image}
+                          alt={content.heading}
+                          className="mx-auto w-full"
+                        />
+                      </div>
+                      <p className="heading-six mb-0">{content.name}</p>
+                    </div>
+                  )}
+                </>
               );
             })}
           </div>

@@ -212,6 +212,15 @@ const Footer = ({ hideFooter }) => {
                       Reviews
                     </AniLink>
                   </li>
+                  <li>
+                    <AniLink
+                      fade
+                      to="/blog/"
+                      className="text-sm text-primary-900/70 hover:text-primary-900 no-underline relative before:w-0 hover:before:w-full before:absolute before:left-auto hover:before:left-0 before:right-0 hover:before:right-auto before:bottom-0 before:bg-primary-900 before:h-px before:transition-all before:duration-300 before:ease-linear"
+                    >
+                      Blog
+                    </AniLink>
+                  </li>
                 </ul>
               </div>
 

@@ -36,6 +36,25 @@ export default class Form extends Component {
     this.state = { isValidated: false };
   }
 
+  changeFormName = (e) => {
+    // The value of the subject field.
+    var value = e.target.value;
+    // The name we want to apply to the form, based on the value.
+    var name = "Contact-" + value;
+    // The form element in the DOM.
+    var form = document.querySelector("#conditional-form");
+    // Apply the new name to the form's [name] attribute.
+    if (form) form.setAttribute("name", name);
+    // The [name="form-name] field in the DOM.
+    var formName = document.querySelector(
+      '#conditional-form [name="form-name"]'
+    );
+    // Apply the new name to the [name="form-name"] field within the form.
+    if (formName) formName.setAttribute("value", name);
+
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -75,6 +94,7 @@ export default class Form extends Component {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
+          id="conditional-form"
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="Contact" />
@@ -142,7 +162,8 @@ export default class Form extends Component {
                     type="radio"
                     name="are-you-an-owner-or-a-renter"
                     value="Landlord or Investors"
-                    onChange={this.handleChange}
+                    onChange={this.changeFormName}
+                    required={true}
                   />
                   Landlord or Investors
                   <span className="radio-custom"></span>
@@ -151,9 +172,8 @@ export default class Form extends Component {
                   <input
                     type="radio"
                     name="are-you-an-owner-or-a-renter"
-                    onChange={this.handleChange}
-                    value="Residents
-"
+                    onChange={this.changeFormName}
+                    value="Residents"
                   />
                   Residents
                   <span className="radio-custom"></span>
