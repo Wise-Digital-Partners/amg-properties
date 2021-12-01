@@ -88,7 +88,7 @@ export default class Form extends Component {
       <StyledForm>
         <div id="contact-form-ajax-response"></div>
         <form
-          name="Contact - Landlord or Investors"
+          name="Contact-Landlord or Investors"
           method="post"
           action=""
           data-netlify="true"
@@ -100,7 +100,7 @@ export default class Form extends Component {
           <input
             type="hidden"
             name="form-name"
-            value="Contact - Landlord or Investors"
+            value="Contact-Landlord or Investors"
           />
           <div hidden>
             <label>
@@ -206,7 +206,7 @@ export default class Form extends Component {
         </form>
 
         <form
-          name="Contact - Residents"
+          name="Contact-Residents"
           method="post"
           action=""
           data-netlify="true"
@@ -215,7 +215,7 @@ export default class Form extends Component {
           className="hidden"
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="Contact - Residents" />
+          <input type="hidden" name="form-name" value="Contact-Residents" />
           <div hidden>
             <label>
               Don’t fill this out:{" "}
