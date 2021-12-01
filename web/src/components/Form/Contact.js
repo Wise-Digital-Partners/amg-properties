@@ -176,8 +176,8 @@ export default class Form extends Component {
                   <input
                     type="radio"
                     name="are-you-an-owner-or-a-renter"
-                    onChange={this.changeFormName}
                     value="Residents"
+                    onChange={this.changeFormName}
                   />
                   Residents
                   <span className="radio-custom"></span>
