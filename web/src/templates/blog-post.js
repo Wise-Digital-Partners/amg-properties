@@ -55,12 +55,18 @@ export const query = graphql`
         name
       }
     }
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
   }
 `;
 
 const BlogPostTemplate = (props) => {
   const { data, errors } = props;
   const post = data && data.post;
+  const site = data && data.site;
   return (
     <Layout>
       {errors && <SearchEngineOptimization title="GraphQL Error" />}
@@ -79,7 +85,7 @@ const BlogPostTemplate = (props) => {
         </div>
       )}
 
-      {post && <BlogPost {...post} />}
+      {post && <BlogPost {...post} {...site} />}
     </Layout>
   );
 };
