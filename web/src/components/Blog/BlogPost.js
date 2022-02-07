@@ -135,7 +135,7 @@ function BlogPost(props) {
         </div>
 
         {mainImage && mainImage.asset && (
-          <div className="mb-16 md:mb-20 flex justify-center">
+          <div className="mb-16 md:mb-20 flex justify-center max-w-[960px] mx-auto">
             <GatsbyImage
               image={props.mainImage.asset.gatsbyImageData}
               alt={props.mainImage.alt}
