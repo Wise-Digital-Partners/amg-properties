@@ -29,28 +29,40 @@ const Footer = ({ hideFooter }) => {
   const navigation = {
     cities: [
       {
+        name: "Hillcrest",
+        href: "/hillcrest-property-management/",
+      },
+      {
+        name: "La Jolla",
+        href: "/la-jolla-property-management/",
+      },
+      {
+        name: "Mission Beach",
+        href: "/mission-beach-property-management/",
+      },
+      {
         name: "Mission Hills",
         href: "/mission-hills-property-management/",
-      },
-      {
-        name: "North Park",
-        href: "/north-park-property-management/",
-      },
-      {
-        name: "University Heights",
-        href: "/university-heights-property-management/",
-      },
-      {
-        name: "South Park",
-        href: "/south-park-property-management/",
       },
       {
         name: "Normal Heights",
         href: "/normal-heights-property-management/",
       },
       {
-        name: "Hillcrest",
-        href: "/hillcrest-property-management/",
+        name: "North Park",
+        href: "/north-park-property-management/",
+      },
+      {
+        name: "Pacific Beach",
+        href: "/pacific-beach-property-management/",
+      },
+      {
+        name: "South Park",
+        href: "/south-park-property-management/",
+      },
+      {
+        name: "University Heights",
+        href: "/university-heights-property-management/",
       },
     ],
   };
