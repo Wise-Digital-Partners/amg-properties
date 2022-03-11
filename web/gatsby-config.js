@@ -30,21 +30,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          // formats: [`auto`, `webp`],
           placeholder: `dominantColor`,
           quality: 100,
           breakpoints: [768, 960, 1024, 1920],
-          // backgroundColor: `transparent`,
-          // tracedSVGOptions: {},
-          // blurredOptions: {},
-          // jpgOptions: {},
-          // pngOptions: {},
-          // webpOptions: {},
-          // avifOptions: {},
         },
       },
     },
@@ -76,13 +69,6 @@ module.exports = {
         name: `uploads`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/downloads`,
-    //     name: `downloads`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -103,15 +89,8 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-emotion`,
-      options: {
-        // Accepts all options defined by `babel-plugin-emotion` plugin.
-      },
-    },
-    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        // develop: true,
         tailwind: true,
         purgeOnly: [
           "node_modules/@fortawesome/fontawesome-pro/css/all.min.css",
@@ -144,10 +123,6 @@ module.exports = {
       options: {
         id: "GTM-K45X5K7",
         includeInDevelopment: true,
-        // defaultDataLayer: { platform: "gatsby" },
-        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
   ],
