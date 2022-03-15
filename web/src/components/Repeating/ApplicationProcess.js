@@ -31,7 +31,7 @@ const ResidentHub = ({ className, headingLevel }) => {
               everything on this checklist ready:
             </p>
             <ul className="styled-list-checkmark mb-6">
-              <li>$40 for the application fee</li>
+              <li>$45 for the application fee</li>
               <li>Proof of your income, such as pay stubs</li>
               <li>Contact information for references</li>
               <li>Your rental history and landlord information</li>
