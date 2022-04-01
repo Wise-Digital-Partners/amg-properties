@@ -57,6 +57,10 @@ const Footer = ({ hideFooter }) => {
         href: "/pacific-beach-property-management/",
       },
       {
+        name: "Point Loma",
+        href: "/point-loma-property-management/",
+      },
+      {
         name: "South Park",
         href: "/south-park-property-management/",
       },
