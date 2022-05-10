@@ -33,6 +33,10 @@ const Footer = ({ hideFooter }) => {
         href: "/hillcrest-property-management/",
       },
       {
+        name: "Kensington",
+        href: "/kensington-property-management/",
+      },
+      {
         name: "La Jolla",
         href: "/la-jolla-property-management/",
       },
