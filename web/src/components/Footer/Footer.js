@@ -29,6 +29,10 @@ const Footer = ({ hideFooter }) => {
   const navigation = {
     cities: [
       {
+        name: "City Heights",
+        href: "/city-heights-property-management/",
+      },
+      {
         name: "Hillcrest",
         href: "/hillcrest-property-management/",
       },
