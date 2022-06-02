@@ -111,15 +111,18 @@ const Page = ({ data }) => {
             <div>
               <h2>Why City Heights Is A Great Place To Live</h2>
               <p>
-                Anyone who spends time in the City Heights neighborhood knows
-                the community's sense of pride in their corner of San Diego.
-                It's a place where people walk their dogs, greet each other with
-                smiles, and chat over coffee. And it's also a place where
-                neighbors gather regularly for events, holiday activities, block
-                parties, tournaments, and more. If you own a rental home in the
-                thriving City Heights neighborhood, you can trust AMG Props to
-                find you the best residents, plus help you earn on your
-                investment. We love being part of such a heart-filled community.
+                If you’re looking to invest in a vibrant and diverse
+                neighborhood, look no further than City Heights. The
+                neighborhood is home to many ethnic communities and serves up
+                cultural experiences concentrated in one location. Enjoy various
+                authentic cuisines, participate in local art events, and support
+                businesses that keep the community thriving. City Heights is
+                also highly walkable, close to major freeways, and offers
+                resources for residents—from a skatepark to trails and even a
+                science and conservation lab that’s part of the Ocean Discovery
+                Institute. With so much opportunity on the horizon, AMG Props is
+                here to help you get the most out of your investment property in
+                City Heights.
               </p>
               <ButtonSolid
                 modal="modal-rental-analysis"
