@@ -58,7 +58,7 @@ const Page = ({ data }) => {
               <GatsbyImage image={data.intro.childImageSharp.gatsbyImageData} />
             </div>
             <div className="order-1 md:order-2">
-              <h1>San Diego Full-Service Property Management Company</h1>
+              <h1>Full-Service San Diego Property Management Company</h1>
               <p>
                 AMG Props can manage every aspect of your rental property, from
                 advertising to leasing, rent collections, accounting, and
@@ -80,7 +80,7 @@ const Page = ({ data }) => {
               />
             </div>
             <div>
-              <h2>Our Property Management Services</h2>
+              <h2>Our San Diego Property Management Services</h2>
               <p>
                 When you partner with AMG Props, you get a professional team
                 with the experience, knowledge, and organization to efficiently

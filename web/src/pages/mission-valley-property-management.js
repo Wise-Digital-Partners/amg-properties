@@ -26,8 +26,8 @@ const Page = ({ data }) => {
   return (
     <Layout>
       <SearchEngineOptimization
-        title="Mission Beach Property Management | AMG Props"
-        description="Partner with AMG Props for premier property management in Mission Beach. We'll handle your advertising, leasing, rent collection, accounting, and maintenance."
+        title="Mission Valley Property Management | AMG Props"
+        description="Partner with AMG Props for premier property management in Mission Valley. We'll handle your advertising, leasing, rent collection, accounting, and maintenance."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
