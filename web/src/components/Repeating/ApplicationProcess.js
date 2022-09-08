@@ -38,7 +38,7 @@ const ResidentHub = ({ className, headingLevel }) => {
               <li>A list of co-applicants/occupants</li>
             </ul>
             <ButtonSolid
-              href="https://amgpropertymgmt.appfolio.com/listings/rental_applications/new?listable_uid=febb6c07-6252-4ce0-9dfa-e2c810cbf3c8&source=Website"
+              href="https://amgpropertymgmt.appfolio.com/listings/rental_applications/new"
               outboundLink={true}
               text="Apply Now"
             />
