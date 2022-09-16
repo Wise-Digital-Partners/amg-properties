@@ -26,8 +26,8 @@ const Page = ({ data }) => {
   return (
     <Layout>
       <SearchEngineOptimization
-        title="Mission Valley Property Management | AMG Props"
-        description="Partner with AMG Props for premier property management in Mission Valley. We'll handle your advertising, leasing, rent collection, accounting, and maintenance."
+        title="Chula Vista Property Management | AMG Props"
+        description="Partner with AMG Props for premier property management in Chula Vista. We'll handle your advertising, leasing, rent collection, accounting, and maintenance."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
@@ -43,7 +43,7 @@ const Page = ({ data }) => {
           <span className="text-primary-500">.</span>
         </p>
         <p className="text-white text-xl mb-8">
-          Stress less. Increase your revenue. Your Mission Valley property and
+          Stress less. Increase your revenue. Your Chula Vista property and
           residents are in good hands.
         </p>
         <ButtonSolid
@@ -58,13 +58,13 @@ const Page = ({ data }) => {
               <GatsbyImage image={data.intro.childImageSharp.gatsbyImageData} />
             </div>
             <div className="order-1 md:order-2">
-              <h1>Mission Valley Property Management Company</h1>
+              <h1>Chula Vista Property Management Company</h1>
               <p>
-                AMG Props can manage every aspect of your Mission Valley
-                investment property, from advertising to leasing, rent
-                collections, accounting, and maintenance. As your San Diego-area
-                landlord, we make you and your property a priority with a
-                service plan crafted to fit your needs.
+                AMG Props can manage every aspect of your Chula Vista investment
+                property, from advertising to leasing, rent collections,
+                accounting, and maintenance. As your San Diego-area landlord, we
+                make you and your property a priority with a service plan
+                crafted to fit your needs.
               </p>
               <ButtonWithIcon href="/about-us/" text="Learn More" />
             </div>
@@ -83,11 +83,11 @@ const Page = ({ data }) => {
               />
             </div>
             <div>
-              <h2>Mission Valley Property Management Company</h2>
+              <h2>Chula Vista Property Management Services</h2>
               <p>
                 When you partner with AMG Props, you get a professional team
                 with the experience, knowledge, and organization to efficiently
-                manage your Mission Valley investment rental property.
+                manage your Chula Vista investment rental property.
               </p>
               <ButtonWithIcon
                 href="/tenant-property-management/"
@@ -109,19 +109,18 @@ const Page = ({ data }) => {
               <GatsbyImage image={data.city.childImageSharp.gatsbyImageData} />
             </div>
             <div>
-              <h2>Why Mission Valley Is A Great Place To Live</h2>
+              <h2>Why Chula Vista Is A Great Place To Live</h2>
               <p>
-                The Mission Valley neighborhood of San Diego is one of
-                California's best places to live, and most of its residential
-                properties are rentals. Located just eight miles from the beach,
-                making it a desirable rental location. The area boasts three
-                major shopping destinations, and there are two hotel zones:
-                Hotel Circle North and Hotel Circle South. In addition, Mission
-                Valley is home to the SDSU Aztecs, whose brand-new football
-                facility, Snapdragon Stadium, is under construction. And if that
-                wasn't enough, SeaWorld, Mission Bay, and Mission Beach are also
-                nearby. If you own a rental home in Mission Valley, you can
-                trust AMG Props to find you the best residents.
+                Chula Vista is a San Diego suburb with safe neighborhoods,
+                excellent schools, a wide variety of shopping and dining
+                options, and easy access to trails that wind among the rolling
+                landscape of canyons and hillsides. The city is also home to two
+                premier family-friendly attractions--Sesame Place San Diego and
+                the Living Coast Discovery Center. And for adults, there's the
+                North Island Credit Union Amphitheatre, one of California's
+                largest outdoor concert venues. If you own property in Chula
+                Vista, it's a great investment, and we can help you get the most
+                out of it.
               </p>
               <ButtonSolid
                 modal="modal-rental-analysis"

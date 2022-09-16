@@ -29,8 +29,16 @@ const Footer = ({ hideFooter }) => {
   const navigation = {
     cities: [
       {
+        name: "Chula Vista",
+        href: "/chula-vista-property-management/",
+      },
+      {
         name: "City Heights",
         href: "/city-heights-property-management/",
+      },
+      {
+        name: "Coronado",
+        href: "/coronado-property-management/",
       },
       {
         name: "Hillcrest",
@@ -45,12 +53,20 @@ const Footer = ({ hideFooter }) => {
         href: "/la-jolla-property-management/",
       },
       {
+        name: "La Mesa",
+        href: "/la-mesa-property-management/",
+      },
+      {
         name: "Mission Beach",
         href: "/mission-valley-property-management/",
       },
       {
         name: "Mission Hills",
         href: "/mission-hills-property-management/",
+      },
+      {
+        name: "Mission Valley",
+        href: "/mission-valley-property-management/",
       },
       {
         name: "Normal Heights",
@@ -81,8 +97,9 @@ const Footer = ({ hideFooter }) => {
 
   return (
     <footer
-      className={`pt-20 md:pt-30 pb-5 md:pb-6 text-center md:text-left ${hideFooter && "hidden"
-        }`}
+      className={`pt-20 md:pt-30 pb-5 md:pb-6 text-center md:text-left ${
+        hideFooter && "hidden"
+      }`}
     >
       <div className="container">
         <div className="grid md:grid-cols-12 md:justify-between space-y-8 md:space-y-0 md:space-x-8 mb-10 md:mb-24">
@@ -253,9 +270,8 @@ const Footer = ({ hideFooter }) => {
                 </div>
 
                 <ul className="flex flex-col space-y-1.5">
-                  <li> 
-                    <p 
-                      className="text-sm text-primary-900/70 mb-0">
+                  <li>
+                    <p className="text-sm text-primary-900/70 mb-0">
                       5694 Mission Center Rd #602-190<br></br>
                       San Diego, CA 92108
                     </p>
@@ -309,15 +325,17 @@ const Footer = ({ hideFooter }) => {
                   <span className="flex items-center justify-between">
                     Cities
                     <i
-                      className={`far fa-chevron-down ml-2 transition-all duration-300 ease-linear transform ${cityDropdownOpen ? "rotate-180" : "rotate-0"
-                        }`}
+                      className={`far fa-chevron-down ml-2 transition-all duration-300 ease-linear transform ${
+                        cityDropdownOpen ? "rotate-180" : "rotate-0"
+                      }`}
                     ></i>
                   </span>
                   <ul
-                    className={`bg-primary-900 text-left absolute bottom-0 right-0 pt-5 px-4 pb-4 flex flex-col space-y-1.5 max-h-28 overflow-y-scroll transform transition-all duration-300 ease-linear ${cityDropdownOpen
+                    className={`bg-primary-900 text-left absolute bottom-0 right-0 pt-5 px-4 pb-4 flex flex-col space-y-1.5 max-h-28 overflow-y-scroll transform transition-all duration-300 ease-linear ${
+                      cityDropdownOpen
                         ? "opacity-100 -translate-y-10 visible"
                         : "opacity-0 -translate-y-4 invisible"
-                      }`}
+                    }`}
                   >
                     {navigation.cities.map((item) => (
                       <li
