@@ -58,12 +58,13 @@ const Page = ({ data }) => {
               <GatsbyImage image={data.intro.childImageSharp.gatsbyImageData} />
             </div>
             <div className="order-1 md:order-2">
-              <h1>Full-Service San Diego Property Management Company</h1>
+              <h1>Full-Service Property Management Company in San Diego</h1>
               <p>
                 AMG Props can manage every aspect of your rental property, from
                 advertising to leasing, rent collections, accounting, and
-                maintenance. We make you and your investment a priority with a
-                service plan crafted to fit your needs.
+                maintenance. As your San Diego property management experts, we
+                make you and your rental a priority with a service plan crafted
+                to fit your needs.
               </p>
               <ButtonWithIcon href="/about-us/" text="Learn More" />
             </div>
@@ -80,11 +81,12 @@ const Page = ({ data }) => {
               />
             </div>
             <div>
-              <h2>Our San Diego Property Management Services</h2>
+              <h2>San Diego Property Management Done Right</h2>
               <p>
-                When you partner with AMG Props, you get a professional team
-                with the experience, knowledge, and organization to efficiently
-                manage your San Diego-area rental property.
+                When you partner with AMG Props, you get a full-service property
+                management company with the experience, knowledge, and
+                organization to efficiently manage your San Diego investment
+                rental property.
               </p>
               <ButtonWithIcon
                 href="/tenant-property-management/"
