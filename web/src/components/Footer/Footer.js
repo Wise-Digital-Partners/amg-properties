@@ -69,6 +69,10 @@ const Footer = ({ hideFooter }) => {
         href: "/mission-valley-property-management/",
       },
       {
+        name: "National City",
+        href: "/national-city-property-management/",
+      },
+      {
         name: "Normal Heights",
         href: "/normal-heights-property-management/",
       },
