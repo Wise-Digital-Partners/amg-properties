@@ -56,10 +56,10 @@ const Footer = ({ hideFooter }) => {
         name: "La Mesa",
         href: "/la-mesa-property-management/",
       },
-      {
-        name: "Mission Beach",
-        href: "/mission-valley-property-management/",
-      },
+      // {
+      //   name: "Mission Beach",
+      //   href: "/mission-valley-property-management/",
+      // },
       {
         name: "Mission Hills",
         href: "/mission-hills-property-management/",
