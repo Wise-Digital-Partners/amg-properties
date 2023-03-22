@@ -39,7 +39,7 @@ const Page = ({ data }) => {
           with AMG Props so we can hear how we're doing!
         </p>
 
-        <ButtonSolid href="/review-us/" text="Leave a Review" />
+        <ButtonSolid href="https://www.google.com/search?q=amgprops&oq=amgprops&aqs=chrome..69i57j46i10i175i199i512.2830j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80deab50ef7b55ed:0xc1dfa73fdff31d5b,3,,,," target="_blank" text="Leave a Review" />
       </Hero>
 
       <section className="pt-16 md:pt-24 mb-20 md:mb-30">
