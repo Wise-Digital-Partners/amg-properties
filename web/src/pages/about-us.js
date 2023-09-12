@@ -98,22 +98,22 @@ const Page = ({ data }) => {
           </>
         ),
       },
-      {
-        image: data.david.childImageSharp.gatsbyImageData,
-        name: "David McKinney",
-        brokerNumber: "",
-        phone: "",
-        email: "",
-        bio: "",
-      },
-      {
-        image: data.kevin.childImageSharp.gatsbyImageData,
-        name: "Kevin Gresiak",
-        brokerNumber: "",
-        phone: "",
-        email: "",
-        bio: "",
-      },
+      // {
+      //   image: data.david.childImageSharp.gatsbyImageData,
+      //   name: "David McKinney",
+      //   brokerNumber: "",
+      //   phone: "",
+      //   email: "",
+      //   bio: "",
+      // },
+      // {
+      //   image: data.kevin.childImageSharp.gatsbyImageData,
+      //   name: "Kevin Gresiak",
+      //   brokerNumber: "",
+      //   phone: "",
+      //   email: "",
+      //   bio: "",
+      // },
     ],
   };
   return (
